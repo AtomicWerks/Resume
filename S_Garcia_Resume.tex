@@ -18,10 +18,6 @@
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
 
 \usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
@@ -41,7 +37,7 @@
 % Colors for links, text and headings
 \usepackage{hyperref}
 \definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
-\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{shade}{HTML}{FFFFFF} % Peach color for the contact information box
 \definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
 \definecolor{headings}{HTML}{701112} % Dark red color for headings
 % Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
@@ -54,7 +50,7 @@
 % Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
 % Example footer:
 %\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
-
+\setlength{\headheight}{0pt}
 \renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
 
 \usepackage{titlesec} % Allows creating custom \section's
@@ -66,56 +62,87 @@
 \titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
 
 \begin{document}
-
+\pagenumbering{gobble}
+%%fakesection{begin document and header}
 \color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+%	HEADER
 %----------------------------------------------------------------------------------------
 
-\par\centering{\sffamily\Huge\ Stephen Garcia}\\ % Your name
-% self.title
-{\color{headings}\fontspec{Freebooter Script}\Large Electronics Technologist \\\par} % declare self.title font
+%\lhead{
+\par{\centering{\sffamily\Huge Stephen Garcia} \\
+\color{headings}\fontspec{Freebooter Script}{\large Maintenance Engineer
+}\par}
+% declare self.title font
 	
 %----------------------------------------------------------------------------------------
-
 \begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
 \vspace{0pt} % Trick for alignment
-	
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
 
-\section{Professional Experience} 
+\section{Summary of Qualifications}
+\smallskip
+\textbullet Performance driven and versatile with over 10 years of experience.\\
+\textbullet Superior ability to install, commission, modify, and troubleshoot control, electrical, mechanical, hydraulic, and pneumatic systems. \\
+\textbullet Track record of exceptional service and support, enhancing overall efficiency and performance while reducing associated costs. \\ 
+\textbullet Proven ability in overall project planning and execution, 
+establishment of project criteria, scope and plans of action. \\
+%\textbullet Able to provide clear, exact documentation, and work safely following established guidelines.
+\smallskip
 
-%------------------------------------------------
-% WORK EXPERIENCE 1
-%------------------------------------------------
-
-{\raggedleft\textsc{2013 - Present}\par}
-
-{\raggedright\large\textsc{Atomicwerks}\\
-\textit{Contractor, Consultant}\\[5pt]}
-
-\normalsize{Design and develop high quality millwork projects and specialty projects in high end homes. Direct personnel operations, manage staff, and provide training. Carefully coordinate plans and specs to keep projects running smoothly and on budget}\\
-
+\section{Professional Experience}
 
 %------------------------------------------------
-% WORK EXPERIENCE 2
+% PROFESSIONAL EXPERIENCE 0
+%------------------------------------------------
+
+{\raggedleft\textsc{2015 - Present}\par}
+
+{\raggedright\large\textsc{YFS Automotive Systems}\\
+\textit{Maintenance Engineer / PM Team Coordinator}\\[5pt]}
+\normalsize{Manage the preventative maintenance personnel. Schedule completion of all work orders. Review completed work orders. Work closesly with the maintance manager to coordinate equipment installation and commissioning.} 
+\smallskip
+
+%------------------------------------------------
+% PROFESSIONAL EXPERIENCE 0
+%------------------------------------------------
+
+{\raggedleft\textsc{2015 - 2016}\par}
+
+{\raggedright\large\textsc{YFS Automotive Systems}\\
+\textit{Senior Maintenance Technician}\\[5pt]}
+\normalsize{Perform break/fix, preventative maintenance, and light engineering on various production and auxiliary equipment in a fast paced environment. Ensure parts being produced comply with quality standards. Assist in training of other technicians on various systems. Analyze reoccurring issues to develop and implement a long term solution. Write technical documentation for troubleshooting.} 
+\smallskip
+
+%------------------------------------------------
+% PROFESSIONAL EXPERIENCE 1
+%------------------------------------------------
+
+%{\raggedleft\textsc{2013 - 2015}\par}
+
+%{\raggedright\large\textsc{GCM Services}\\
+%\textit{(Sub)Contractor, Consultant}\\[5pt]}
+%\normalsize{Designed and developed high quality millwork and specialty projects for high end homes. Provided 100\% project completion, while meeting timeline and budget requirements. Directed operations, managed staff, and mentored new mechanics. Generated estimates, quotes, and scopes of work. Created and reviewed blueprints and drawings.}
+%\smallskip
+
+%------------------------------------------------
+% PROFESSIONAL EXPERIENCE 2
 %------------------------------------------------
 
 {\raggedleft\textsc{2009 - 2013}\par}
 
 {\raggedright\large\textsc{Joy Global, inc.}\\
-\textit{Field Service Representative III}\\[5pt]}
+\textit{Field Service Engineer III}\\[5pt]}
 
-\normalsize{Commissioned and provided support for over \$50 million of equipment. Assessed OE and Rebuild equipment during manufacturing to ensure compliance and quality. Fostered and maintained relationships with 16 customer sites. Coordinated and/or provided machine service, both planned and emergency. Managed the quality program for the region. Administered all motor warranties for the region. Implemented multiple programs to improve reliability. Trained customers on a wide range of curricula.}\\
+\normalsize{Commissioned and provided support for over \$50 million of equipment. Coordinated and provided installation, repair, troubleshooting, testing and analysis. Fostered relationships with customers, vendors, and contractors. Managed the quality assurance program for the business unit. Implemented multiple programs to improve reliability, through KPI analysis. Assessed equipment during manufacturing to ensure compliance and quality. Trained customers on a wide range of curricula.}
+\smallskip
 
 %\textit{\color{headings}Key Achievements}\\
-%\normalsize{Promoted to top tier within 3 years. Assumed QA management over the region after only 6 months in position. Implemented a program that led to a 30\% decrease in premature motor failures of a specific application. Successfully led the deployment of a large population of machines outfitted with a revolutionary proximity detection system.}
+%\normalsize{Reached top tier within 3 years. Assumed QA management role within 6 months in position. Implemented programs that led to a 30\% decrease in premature motor failures of a specific application. Successfully led the deployment of a large population of machines outfitted with a revolutionary proximity detection system.}
+%\smallskip
 
 %------------------------------------------------
-% WORK EXPERIENCE 3
+% PROFESSIONAL EXPERIENCE 3
 %------------------------------------------------
 
 {\raggedleft\textsc{2007 - 2009}\par}
@@ -123,31 +150,34 @@
 {\raggedright\large\textsc{HBSX}\\
 \textit{Field Service Engineer \& Analyst}\\[5pt]}
 
-\normalsize{Serviced and supported 150+ pieces of equipment at 100+ customer sites. Factory refurbished equipment for resale to customers. Installed, configured, and commissioned equipment. Trained customers at their site, in groups and individually. Developed comprehensive networking and digital storage solutions to meet customer needs. Provided IT solutions for system integration.}\\
+\normalsize{Serviced and supported 150+ pieces of equipment at 100+ customer sites. Refurbished equipment for resale to customers. Installed, configured, and commissioned equipment. Trained customers at their site, in groups and individually. Developed comprehensive networking and digital storage solutions to meet customer needs. Analyzed use cases and provided networked systems integration.}
+\smallskip
 
 %------------------------------------------------
-% WORK EXPERIENCE 4
+% PROFESSIONAL EXPERIENCE 4
 %------------------------------------------------
 
-{\raggedleft\textsc{2004 - 2007}\par}
+%{\raggedleft\textsc{2004 - 2007}\par}
 
-{\raggedright\large\textsc{GBC,inc.}\\
-\textit{Asst. Project Coordinator \& Team Lead}\\[5pt]}
+%{\raggedright\large\textsc{GBC,inc.}\\
+%\textit{Asst. Project Coordinator \& Team Lead}\\[5pt]}
 
-\normalsize{Successfully led a 3-5 employee production team, consistently exceeding performance metrics. Developed and Maintained vendor and contractor relationships. Completed material take-offs for new contracts and maintained inventory levels. Sustained positive customer relationships. Administered the warranty process for the company.}\\
+%\normalsize{Assisted owner with all phases of projects from planning through execution. Inspected progress, equipment, and sites to ensure specifications were met. Reviewed documentation to determine requirements. Led a production team, exceeding performance metrics, by expediting work to be performed. Fostered and maintaned vendor, contractor, and customer relationships.}
+%\smallskip
 
 %------------------------------------------------
 
 %------------------------------------------------
-% WORK EXPERIENCE 4
+% PROFESSIONAL EXPERIENCE 5
 %------------------------------------------------
 
-{\raggedleft\textsc{2002 - 2004}\par}
+%{\raggedleft\textsc{2002 - 2004}\par}
 
-{\raggedright\large\textsc{Northeast Document Services}\\
-\textit{Field Service Technician}\\[5pt]}
+%{\raggedright\large\textsc{Northeast Document Services}\\
+%\textit{Field Service Technician}\\[5pt]}
 
-\normalsize{Supervised and monitored field repair and maintenance work in assigned territory. Interpreted and validated technical issues, tested solutions, followed-up and escalated when necessary.Continued internal education, training and certifications to stay ahead of an evolving technical industry. Maintained detailed documentation through logging of support cases for client and internal use.}\\
+%\normalsize{Supervised and Performed repair and maintenance work. Interpreted and validated technical issues, tested solutions, followed-up and escalated when necessary. Continued education, training and certifications to stay ahead of an evolving technical industry. Maintained detailed documentation through logging of support cases for client and internal use.}
+%\smallskip
 
 %------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -170,37 +200,32 @@
 %----------------------------------------------------------------------------------------
 
 
+
 \end{minipage} % End the left-hand side of the page
 \hfill
 \begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
 \vspace{0pt} % Trick for alignment
 
 %----------------------------------------------------------------------------------------
-%	COLORED BOX
+%%fakesection{COLORED BOX}
 %----------------------------------------------------------------------------------------
 
-{\textcolor{text1}{
+\colorbox{shade}{\textcolor{text1}{
 \begin{tabular}{c|p{7cm}}
-\raisebox{-2pt}{\textifsymbol{18}} & 1810 Hawkins Branch Rd., Bethpage, TN 37022 \\ % Address
-\raisebox{-1pt}{\Mobilefone} & (615)392-0402 \\ % Phone number
+\raisebox{-2pt}{\textifsymbol{18}} & Lebanon, TN 37087 \\ % Address
+\raisebox{-1pt}{\Mobilefone} & (615)756-1603 \\ % Phone number
 \raisebox{-1pt}{\Letter} & \href{mailto:stgarcia402@gmail.com}{stgarcia402@gmail.com} \\ % Email address
-\Keyboard & \href{https://www.linkedin.com/in/stgarcia402}{https://www.linkedin.com/in/stgarcia402} \\ % Website
+%\Keyboard & \href{https://www.linkedin.com/in/stgarcia402}{https://www.linkedin.com/in/stgarcia402} \\ % Website
 \end{tabular}
 }
-}\\[10pt]
+}\smallskip
 
-
-
-%----------------------------------------------------------------------------------------
-%	Key Strengths
-%----------------------------------------------------------------------------------------
 
 \section{Key Strengths} 
 
 \begin{tabular}{rl}
-Product Development & Troubleshooting \\
-Machine Repair & Preventative Maintenance \\
-KPI Analysis & Field Testing\\
+Machine Repair & Troubleshooting \\
+KPI Analysis & Preventative Maintenance \\
 Quality Assurance & Root Cause Analysis \\
 Commissioning & Account Management \\
 Technical Sales & Relationship Development \\
@@ -209,81 +234,59 @@ Project Planning & Teamwork \\
 Complex Problem Solving & Team Leadership \\
 Deductive Reasoning & Multitasking \\
 Inductive Reasoning & Resource Management \\
-Project Management & Continuous improvement \\ 
-Technical Training & Technical Presentations \\
-%------------------------------------------------
-
-\end{tabular}\\[10pt]
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%----------------------------------------------------------------------------------------
+Project Management & Continuous Improvement \\ 
+Technical Training & Field Testing \\
+\end{tabular}
+\smallskip
 
 \section{Technical Knowledge} 
 
+
 \begin{tabular}{rl}
-Machinery Specific
-& Control Systems, \\ 
-& Logic Controllers (PLCs), \\
-& AC/DC Motors, \\
-& Motor Drives (VFD,SCR), \\
+Mechatronic: & Control Systems: \\ 
+& (Beckhoff, Rockwell, Siemens), \\
+& Fieldbus Communications: \\ 
+& (Profibus, Ethercat, Lightbus, Canbus), \\
+& Fanuc and ABB Robots, \\
+& AC/DC Motors, VFD and SCR Drives,\\
 & Power Systems to 1000v, \\
-& Mechanical Systems, \\
-& Reducers, Gear Boxes, \\
-& Hydraulic Systems, \\
-& Conveyor Systems \\ \\
-Computer Specific
-& SAP, CRM, Access, GIT \\
-& Database Administration, \\
-& OpenOffice, Linux,\\
-& Microsoft Windows, \\
-& Microsoft Office Suite, \\
-& PC Hardware \& Support,\\
-& Embedded Operating Systems \\ 
-\\
+& Vision Systems, \\
+& Complex Mechanical Systems, \\
+& Hydraulic and Pneumatic Systems,  \\
+& Conveyor Systems, \\
+& Helium Leak Testers \\
+IT/Computer: & SAP, CRM, GIT, SSH, \LaTeX, \\
+& Linux, Windows, OS X, Android,\\
+& Active Directory, Exchange, Access, \\
+%& Word, Excel, Powerpoint, Outlook, \\ 
+& Virtual Hosting, Web Development,\\
+& Server Configuration, TCP/IP,\\
+& Systems Security, Printers, \\
+& PC Hardware/Peripherals,\\
+& Network Devices, Smartphones \\
 \end{tabular}
+\smallskip
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\section{Education} 
+\section{Professional Development} 
 
 \begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
-
-%------------------------------------------------
-% EDUCATION 1
-%------------------------------------------------
-
-2008 & \textbf{Radiography} \\ 
-& \textit{Southwest Community College}\\
-&\\
-	 
-%------------------------------------------------
-% EDUCATION 2
-%------------------------------------------------
-
-2002 & \textbf{Web Development Programs} \\ 
-& \small President's List \\
-& \textit{Lehigh Valley College}\\
-&\\
-	 
-%------------------------------------------------
-% EDUCATION 3
-%------------------------------------------------
-
-2000 & \textbf{Electrical Engineering Technology}\\
+2015 & \textbf{Beckhoff TwinCat}\\
+    & \textit{Beckhoff Automation GmbH \& Co}\\
+2012 & \textbf{Best Practices in Dust Control}\\
+& \textit{NIOSH}\\
+2011 & \textbf{Principals of Hydraulics} \\ 
+& \textit{National Fluid Power Association}\\
+    2008 & \textbf{80hr \& 40 Safety and Hazard Training}\\
+& \textit{MSHA - Mine Safety and Hazard Administration}\\
+2002 & \textbf{Web Development} \footnotesize(Diploma) \\ 
+& \textit{Lehigh Valley College,\small Summa Cum Laude}\\
+2000 & \textbf{Electronics \& Computer Technology} \footnotesize(Diploma)\\
 & \textit{Hunterdon County Polytech}\\
-&\\
+
 	 
-%------------------------------------------------
-% EDUCATION 4
-%------------------------------------------------
+\end{tabular}
 
-
-%----------------------------------------------------------------------------------------
-
-\end{tabular}\\[10pt]	
 \end{minipage} % End right-hand side of the page
 
+%\lfoot{\sffamily\centering Stephen Garcia \href{mailto:stgarcia402@gmail.com}{stgarcia402@gmail.com} \textit{(615)392-0402}}
 \end{document}  
